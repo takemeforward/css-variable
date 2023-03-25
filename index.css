@@ -1,0 +1,29 @@
+*,::before,::after{
+    box-sizing: border-box;
+}
+:root{
+    --base: red;
+    --spacing: 10px;
+    --blur: 0px;
+}
+body{
+   text-align: center;
+   background-color: #dacfc3;
+   transition: all .6s ease-in-out;
+}
+
+.controller{
+    margin: 50px auto;
+}
+img{
+    width: 50%;
+    padding: var(--spacing);
+    filter: blur(var(--blur));
+    background-color: var(--base);
+}
+.heading{
+    color: var(--base);
+}
+input{
+    width: 100px;
+}
